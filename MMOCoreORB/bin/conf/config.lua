@@ -61,7 +61,7 @@ Core3 = {
 	DBUser = "swgemu",
 	DBPass = "123456",
 	DBInstances = 2,
-	DBSecret = "TheOneAndOnlyHandspritt!", -- Change this! This value should be unique and of reasonable length.
+	DBSecret = "Handspritt!", -- Change this! This value should be unique and of reasonable length.
 
 	------Login Server Config------
 	LoginPort = 44453,
@@ -70,12 +70,12 @@ Core3 = {
 	LoginRequiredVersion = "20050408-18:00",
 
 	------Mantis Database Config------
-	--MantisHost = "127.0.0.1",
-	--MantisPort = 3306,
-	--MantisName = "swgemu",
-	--MantisUser = "swgemu",
-	--MantisPass = "123456",
-	--MantisPrfx = "mantis_", -- The prefix for your mantis tables.
+	MantisHost = "127.0.0.1",
+	MantisPort = 3306,
+	MantisName = "swgemu",
+	MantisUser = "swgemu",
+	MantisPass = "123456",
+	MantisPrfx = "mantis_", -- The prefix for your mantis tables.
 
 	------Metrics Server Config------
 	MetricsHost = "localhost",
