@@ -1,6 +1,6 @@
 # MySQL Navigator Xport
 # Database: swgemu
-# root@localhost
+# root@89.160.230.71
 
 # CREATE DATABASE swgemu;
 # USE swgemu;

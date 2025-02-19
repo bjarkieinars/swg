@@ -7,7 +7,7 @@
 #include "ZoneMessageProcessorTask.h"
 
 ZoneClient::ZoneClient(int port) {
-	client = new BaseClient("localhost", port);
+	client = new BaseClient("89.160.230.71", port);
 	client->setHandler(this);
 
 	client->setLogging(true);

@@ -2,7 +2,7 @@
 -- version 3.3.7deb3build0.10.10.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
+-- Host: 89.160.230.71
 -- Generation Time: Mar 03, 2011 at 01:43 PM
 -- Server version: 5.1.49
 -- PHP Version: 5.3.3-1ubuntu9.3

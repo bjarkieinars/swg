@@ -9,7 +9,7 @@
 #include "LoginClient.h"
 
 LoginClient::LoginClient(int port, const String& loggingName) {
-	client = new BaseClient("localhost", port);
+	client = new BaseClient("89.160.230.71", port);
 
 	client->setLogging(true);
 	client->setLoggingName(loggingName);

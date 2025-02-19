@@ -327,7 +327,7 @@ namespace conf {
 		}
 
 		inline const String& getDBHost() {
-			return getString("Core3.DBHost", "127.0.0.1");
+			return getString("Core3.DBHost", "89.160.230.71");
 		}
 
 		inline bool isProgressMonitorActivated() {
@@ -379,7 +379,7 @@ namespace conf {
 		}
 
 		inline const String& getMantisHost() {
-			return getString("Core3.MantisHost", "127.0.0.1");
+			return getString("Core3.MantisHost", "89.160.230.71");
 		}
 
 		inline int getMantisPort() {
@@ -419,7 +419,7 @@ namespace conf {
 		}
 
 		inline const String& getMetricsHost() {
-			return getString("Core3.MetricsHost", "127.0.0.1");
+			return getString("Core3.MetricsHost", "89.160.230.71");
 		}
 
 		inline const String& getMetricsPrefix() {

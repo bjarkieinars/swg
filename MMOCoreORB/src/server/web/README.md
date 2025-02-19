@@ -48,7 +48,7 @@ This means the server is enabled and listening on 44443.
 You can do a simple test of the API by calling the version endpoint:
 
 ```
-curl -s -k -H "Authorization: Bearer {tokenhere}" "https://127.0.0.1:44443/v1/version"
+curl -s -k -H "Authorization: Bearer {tokenhere}" "https://89.160.230.71:44443/v1/version"
 ```
 
 The output should be a JSON object with the status of the request and some simple version info (first line of rev.txt etc.)

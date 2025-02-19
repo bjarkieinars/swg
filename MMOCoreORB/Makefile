@@ -211,7 +211,7 @@ status-db-helm:
 	helm ls --all --tiller-namespace ${DB_NAMESPACE}
 	kubectl get svc --namespace ${DB_NAMESPACE}
 	kubectl get po --namespace ${DB_NAMESPACE}
-	kubectl exec nuodb-sm-0 --namespace nuodb -- /opt/nuodb/bin/nuodbmgr --broker localhost --password bird --command "show domain summary"
+	kubectl exec nuodb-sm-0 --namespace nuodb -- /opt/nuodb/bin/nuodbmgr --broker 89.160.230.71 --password bird --command "show domain summary"
 	#done
 
 status-app-helm:

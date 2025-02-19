@@ -17,10 +17,10 @@ core3_init_env() {
     fi
 
     export GALAXY_NAME=${GALAXY_NAME:-'core3-docker'}
-    export GALAXY_ADDRESS=${GALAXY_ADDRESS:-'127.0.0.1'}
+    export GALAXY_ADDRESS=${GALAXY_ADDRESS:-'89.160.230.71'}
     export GALAXY_ID=${GALAXY_ID:-2}
     export ZONEGALAXYID=${GALAXY_ID}
-    export DBHOST=${DBHOST:-'127.0.0.1'}
+    export DBHOST=${DBHOST:-'89.160.230.71'}
     export DBPORT=${DBPORT:-'3306'}
     export DBNAME=${DBNAME:-'swgemu'}
     export DBUSER=${DBUSER:-'swgemu'}
@@ -85,7 +85,7 @@ core3_mysql_fix_dbname() {
 }
 
 core3_mysql_setup() {
-    if [ "${DBHOST}" != "127.0.0.1" ]; then
+    if [ "${DBHOST}" != "89.160.230.71" ]; then
         return
     fi
 
@@ -96,9 +96,9 @@ core3_mysql_setup() {
     /etc/init.d/mariadb start
     mysql -v <<-EOF
         SET @@SESSION.SQL_LOG_BIN=0;
-        DELETE FROM mysql.user WHERE user NOT IN ('mysql.sys', 'mariadb.sys', 'mysqlxsys', 'root') OR host NOT IN ('localhost') ;
-        SET PASSWORD FOR 'root'@'localhost' = PASSWORD('${DBPASS}');
-        GRANT ALL ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+        DELETE FROM mysql.user WHERE user NOT IN ('mysql.sys', 'mariadb.sys', 'mysqlxsys', 'root') OR host NOT IN ('89.160.230.71') ;
+        SET PASSWORD FOR 'root'@'89.160.230.71' = PASSWORD('${DBPASS}');
+        GRANT ALL ON *.* TO 'root'@'89.160.230.71' WITH GRANT OPTION;
         CREATE USER 'root'@'%' IDENTIFIED BY '${DBPASS}';
         GRANT ALL ON *.* TO 'root'@'%' WITH GRANT OPTION;
         CREATE USER '${DBUSER}'@'%' IDENTIFIED BY '${DBPASS}';

@@ -1,6 +1,6 @@
 <?php
  //SETUP
- $DB_ADDRESS = "127.0.0.1";
+ $DB_ADDRESS = "89.160.230.71";
  $DB_NAME = "swgemu";
  $DB_USER = "swgemu";
  $DB_PASS = "123456"; 
