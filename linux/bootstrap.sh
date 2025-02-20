@@ -258,7 +258,7 @@ core3_bootstrap() {
 
     cd "${HOME_DIR}" || exit
 
-    wget -qO /tmp/firstboot https://raw.githubusercontent.com/swgemu/Core3/unstable/docker/files/firstboot/functions ||
+    wget -qO /tmp/firstboot https://raw.githubusercontent.com/bjarkieinars/swg/unstable/docker/files/firstboot/functions ||
         error "Failed to download firstboot setup. GET HELP." 103
 
     msg "Loading firstboot functions..."
