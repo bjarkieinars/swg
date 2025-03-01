@@ -115,7 +115,7 @@ yavin4_regions = {
 	--{"@yavin4_region_names:taurin_delta", 0, 0, {CIRCLE, 0}, UNDEFINEDAREA},
 
 	-- Cities
-	{"@yavin4_region_names:yavin4_labor_outpost", -6925, -5707, {CIRCLE, 200}, CITY + NOSPAWNAREA},
+	{"@yavin4_region_names:yavin4_labor_outpost", 5925, 707, {CIRCLE, 200}, CITY + NOSPAWNAREA},
 	{"@yavin4_region_names:yavin4_mining_outpost", -307, 4861, {CIRCLE, 200}, CITY + NOSPAWNAREA},
 	{"@yavin4_region_names:imperial_fort", 4030, -6230, {CIRCLE, 200}, CITY + NOSPAWNAREA},
 	{"@yavin4_region_names:yavin4_imperial_fort", 4030, -6215, {CIRCLE, 200}, NAMEDREGION},
